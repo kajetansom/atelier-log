@@ -1,0 +1,17 @@
+.UserTag {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 170px;
+    padding: 10px 10px;
+    font-size: 3vw;
+    background-color: #fff;
+    border: 5px solid #000;
+    letter-spacing: 0.1vw;
+    cursor: pointer;
+    color: #000;
+}
+
+.Gif img {
+    max-width: 150px;
+}
+    

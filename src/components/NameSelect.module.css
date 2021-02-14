@@ -1,0 +1,10 @@
+.Select {
+    outline: none;
+    padding: 1vw 2vw;
+    font-size: 6vw;
+    background-color: #fff;
+    border: 5px solid #000;
+    letter-spacing: 0.1vw;
+    cursor: pointer;
+    font-weight: bold
+}    

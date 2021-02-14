@@ -1,0 +1,18 @@
+.Button {
+    outline: none;
+    padding: 1vw 2vw;
+    font-size: 6vw;
+    background-color: #fff;
+    border: 5px solid #000;
+    letter-spacing: 0.1vw;
+    cursor: pointer;
+    background-color: #009900;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.LoggedIn {
+    background-color: #990000;
+    color: #fff
+}
