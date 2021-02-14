@@ -35,7 +35,7 @@ const App = () => {
   }
 
   const loginDatabase = (user) => {
-    axios.post(`/users/${user}.json`, Date.now())
+    axios.post(`https://atelier-log-default-rtdb.europe-west1.firebasedatabase.app/users/${user}.json`, Date.now())
         .then(response => {
           let newLoggedUsers = loggedUsers.concat(user)
           setLoggedUsers(newLoggedUsers);
@@ -45,7 +45,7 @@ const App = () => {
   }
 
   const logOutDatabase = (user) => {
-    axios.delete(`/users/${user}.json`)
+    axios.delete(`https://atelier-log-default-rtdb.europe-west1.firebasedatabase.app/users/${user}.json`)
         .then(response => {
           console.log(user + " user logged in")
         });
@@ -57,7 +57,7 @@ const App = () => {
   }
 
   const getUsersDatabase = () => {
-    axios.get('/users.json')
+    axios.get('https://atelier-log-default-rtdb.europe-west1.firebasedatabase.app/users.json')
       .then(response => {
         if(Object.keys(response.data).length > 0) {
           const allLoggedUsers = [];
@@ -77,7 +77,7 @@ const App = () => {
   }, 20000)
 
   const checkUserDatabase = (user) => {
-    axios.get(`/users/${user}.json`)
+    axios.get(`https://atelier-log-default-rtdb.europe-west1.firebasedatabase.app/users/${user}.json`)
         .then(response => {
           console.log(response)
           if(response.data) {
